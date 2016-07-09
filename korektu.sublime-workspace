@@ -211,6 +211,82 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 7393,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/titles/titles.html",
+			"settings":
+			{
+				"buffer_size": 21,
+				"line_ending": "Unix",
+				"name": "titles.html"
+			}
+		},
+		{
+			"file": "app/app.js",
+			"settings":
+			{
+				"buffer_size": 373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/titles/titles.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "titles.js"
+			}
+		},
+		{
+			"file": "korektu.sublime-project",
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 3463 files for \"myApp\"\n\n/Users/bwilson/Projects/korektu/app/index-async.html:\n   39      ], function() {\n   40        // when all is done, execute bootstrap angular application\n   41:       angular.bootstrap(document, ['myApp']);\n   42      });\n   43    </script>\n\n/Users/bwilson/Projects/korektu/app/components/version/interpolate-filter.js:\n    1  'use strict';\n    2  \n    3: angular.module('myApp.version.interpolate-filter', [])\n    4  \n    5  .filter('interpolate', ['version', function(version) {\n\n/Users/bwilson/Projects/korektu/app/components/version/interpolate-filter_test.js:\n    1  'use strict';\n    2  \n    3: describe('myApp.version module', function() {\n    4:   beforeEach(module('myApp.version'));\n    5  \n    6    describe('interpolate filter', function() {\n\n/Users/bwilson/Projects/korektu/app/components/version/version-directive.js:\n    1  'use strict';\n    2  \n    3: angular.module('myApp.version.version-directive', [])\n    4  \n    5  .directive('appVersion', ['version', function(version) {\n\n/Users/bwilson/Projects/korektu/app/components/version/version-directive_test.js:\n    1  'use strict';\n    2  \n    3: describe('myApp.version module', function() {\n    4:   beforeEach(module('myApp.version'));\n    5  \n    6    describe('app-version directive', function() {\n\n/Users/bwilson/Projects/korektu/app/components/version/version.js:\n    1  'use strict';\n    2  \n    3: angular.module('myApp.version', [\n    4:   'myApp.version.interpolate-filter',\n    5:   'myApp.version.version-directive'\n    6  ])\n    7  \n\n/Users/bwilson/Projects/korektu/app/components/version/version_test.js:\n    1  'use strict';\n    2  \n    3: describe('myApp.version module', function() {\n    4:   beforeEach(module('myApp.version'));\n    5  \n    6    describe('version service', function() {\n\n/Users/bwilson/Projects/korektu/app/view1/view1.js:\n    1  'use strict';\n    2  \n    3: angular.module('myApp.view1', ['ngRoute'])\n    4  \n    5  .config(['$routeProvider', function($routeProvider) {\n\n/Users/bwilson/Projects/korektu/app/view1/view1_test.js:\n    1  'use strict';\n    2  \n    3: describe('myApp.view1 module', function() {\n    4  \n    5:   beforeEach(module('myApp.view1'));\n    6  \n    7    describe('view1 controller', function(){\n\n/Users/bwilson/Projects/korektu/app/view2/view2.js:\n    1  'use strict';\n    2  \n    3: angular.module('myApp.view2', ['ngRoute'])\n    4  \n    5  .config(['$routeProvider', function($routeProvider) {\n\n/Users/bwilson/Projects/korektu/app/view2/view2_test.js:\n    1  'use strict';\n    2  \n    3: describe('myApp.view2 module', function() {\n    4  \n    5:   beforeEach(module('myApp.view2'));\n    6  \n    7    describe('view2 controller', function(){\n\n/Users/bwilson/Projects/korektu/bower_components/angular/angular.js:\n 2233             * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 2234             * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 2235:            * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 2236:            * (`myapp_subsection_filterx`).\n 2237             * </div>\n 2238             */\n ....\n 6645   *\n 6646   * ```js\n 6647:  * var myApp = angular.module('myApp', []);\n 6648:  * myApp.run(function($templateCache) {\n 6649   *   $templateCache.put('templateId.html', 'This is the content of the template');\n 6650   * });\n ....\n 11746   *\n 11747   * ```\n 11748:  * angular.module('myApp', [])\n 11749   * .factory('$xhrFactory', function() {\n 11750   *   return function createXhr(method, url) {\n .....\n 18047   * **Example**:  Consider the following case. <a name=\"example\"></a>\n 18048   *\n 18049:  * - your app is hosted at url `http://myapp.example.com/`\n 18050   * - but some of your templates are hosted on other domains you control such as\n 18051   *   `http://srv01.assets.example.com/`,  `http://srv02.assets.example.com/`, etc.\n 18052:  * - and you have an open redirect at `http://myapp.example.com/clickThru?...`.\n 18053   *\n 18054   * Here is what a secure configuration for this scenario might look like:\n 18055   *\n 18056   * ```\n 18057:  *  angular.module('myApp', []).config(function($sceDelegateProvider) {\n 18058   *    $sceDelegateProvider.resourceUrlWhitelist([\n 18059   *      // Allow same origin resource loads.\n .....\n 18065   *    // The blacklist overrides the whitelist so the open redirect here is blocked.\n 18066   *    $sceDelegateProvider.resourceUrlBlacklist([\n 18067:  *      'http://myapp.example.com/clickThru**'\n 18068   *    ]);\n 18069   *  });\n .....\n 18598   *\n 18599   * ```\n 18600:  * angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {\n 18601   *   // Completely disable SCE.  For demonstration purposes only!\n 18602   *   // Do not use in new projects.\n .....\n 19635   * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 19636   * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 19637:  * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 19638:  * (`myapp_subsection_filterx`).\n 19639   * </div>\n 19640   *\n .....\n 19724     *    **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 19725     *    Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 19726:    *    your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 19727:    *    (`myapp_subsection_filterx`).\n 19728     *    </div>\n 19729      * @param {Function} factory If the first argument was a string, a factory function for the filter to be registered.\n\n/Users/bwilson/Projects/korektu/bower_components/angular-loader/angular-loader.js:\n  351             * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n  352             * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n  353:            * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n  354:            * (`myapp_subsection_filterx`).\n  355             * </div>\n  356             */\n\n/Users/bwilson/Projects/korektu/bower_components/angular-mocks/angular-mocks.js:\n 1107    // The module code\n 1108    angular\n 1109:     .module('MyApp', [])\n 1110      .controller('MyController', MyController);\n 1111  \n ....\n 1140  \n 1141         // Set up the module\n 1142:        beforeEach(module('MyApp'));\n 1143  \n 1144         beforeEach(inject(function($injector) {\n ....\n 2368   *\n 2369   * ```js\n 2370:  *   var myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);\n 2371:  *   myAppDev.run(function($httpBackend) {\n 2372   *     var phones = [{name: 'phone1'}, {name: 'phone2'}];\n 2373   *\n ....\n 2389   *\n 2390   * ## Example\n 2391:  * <example name=\"httpbackend-e2e-testing\" module=\"myAppE2E\" deps=\"angular-mocks.js\">\n 2392   * <file name=\"app.js\">\n 2393:  *   var myApp = angular.module('myApp', []);\n 2394   *\n 2395:  *   myApp.controller('main', function($http) {\n 2396   *     var ctrl = this;\n 2397   *\n ....\n 2418   * </file>\n 2419   * <file name=\"e2e.js\">\n 2420:  *   var myAppDev = angular.module('myAppE2E', ['myApp', 'ngMockE2E']);\n 2421   *\n 2422:  *   myAppDev.run(function($httpBackend) {\n 2423   *     var phones = [{name: 'phone1'}, {name: 'phone2'}];\n 2424   *\n ....\n 2986     * ```js\n 2987     *\n 2988:    *   angular.module('myApplicationModule', [])\n 2989     *       .value('mode', 'app')\n 2990     *       .value('version', 'v1.0.1');\n 2991     *\n 2992     *\n 2993:    *   describe('MyApp', function() {\n 2994     *\n 2995     *     // You need to load modules that you want to test,\n 2996     *     // it loads only the \"ng\" module by default.\n 2997:    *     beforeEach(module('myApplicationModule'));\n 2998     *\n 2999     *\n\n/Users/bwilson/Projects/korektu/bower_components/angular-route/README.md:\n   18  \n   19  ```javascript\n   20: angular.module('myApp', [require('angular-route')]);\n   21  ```\n   22  \n   ..\n   36  \n   37  ```javascript\n   38: angular.module('myApp', ['ngRoute']);\n   39  ```\n   40  \n\n/Users/bwilson/Projects/korektu/node_modules/engine.io/README.md:\n  341  \n  342  ```\n  343: DEBUG=engine* node myapp\n  344  ```\n  345  \n\n/Users/bwilson/Projects/korektu/node_modules/fsevents/node_modules/node-pre-gyp/README.md:\n   78   - `--target_platform=win32`: Pass the target platform and override the host `platform`. Valid values are `linux`, `darwin`, `win32`, `sunos`, `freebsd`, `openbsd`, and `aix`.\n   79  \n   80: Both `--build-from-source` and `--fallback-to-build` can be passed alone or they can provide values. You can pass `--fallback-to-build=false` to override the option as declared in package.json. In addition to being able to pass `--build-from-source` you can also pass `--build-from-source=myapp` where `myapp` is the name of your module.\n   81  \n   82: For example: `npm install --build-from-source=myapp`. This is useful if:\n   83  \n   84:  - `myapp` is referenced in the package.json of a larger app and therefore `myapp` is being installed as a dependent with `npm install`.\n   85   - The larger app also depends on other modules installed with `node-pre-gyp`\n   86:  - You only want to trigger a source compile for `myapp` and the other modules.\n   87  \n   88  ### Configuring\n\n/Users/bwilson/Projects/korektu/node_modules/http-server/README.md:\n   21  # Installing as a node app\n   22  \n   23:      mkdir myapp\n   24:      cd myapp/\n   25       jitsu install http-server\n   26  \n\n/Users/bwilson/Projects/korektu/node_modules/karma/node_modules/colors/ReadMe.md:\n   94  \n   95  ```bash\n   96: node myapp.js --no-color\n   97  ```\n   98  \n\n/Users/bwilson/Projects/korektu/node_modules/log4js/examples/logstashUDP.js:\n    8      queue_size => 2\n    9      workers => 2\n   10:     type => myAppType\n   11    }\n   12  */\n   ..\n   22        \"port\": 10001,\n   23        \"type\": \"logstashUDP\",\n   24:       \"logType\": \"myAppType\", // Optional, defaults to 'category'\n   25        \"fields\": {             // Optional, will be added to the 'fields' object in logstash\n   26          \"field1\": \"value1\",\n\n/Users/bwilson/Projects/korektu/node_modules/log4js/test/logstashUDP-test.js:\n   46          \"port\": 10001,\n   47          \"type\": \"logstashUDP\",\n   48:         \"logType\": \"myAppType\",\n   49          \"category\": \"myLogger\",\n   50          \"fields\": {\n   ..\n   65        assert.equal(topic.results.offset, 0);\n   66        var json = JSON.parse(topic.results.buffer.toString());\n   67:       assert.equal(json.type, 'myAppType');\n   68        var fields = {\n   69          field1: 'value1',\n\n/Users/bwilson/Projects/korektu/node_modules/socket.io/Readme.md:\n  420  \n  421  ```\n  422: DEBUG=socket.io* node myapp\n  423  ```\n  424  \n\n70 matches across 22 files\n\n\nSearching 3463 files for \"myApp\"\n\n/Users/bwilson/Projects/korektu/bower_components/angular/angular.js:\n 2233             * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 2234             * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 2235:            * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 2236:            * (`myapp_subsection_filterx`).\n 2237             * </div>\n 2238             */\n ....\n 6645   *\n 6646   * ```js\n 6647:  * var myApp = angular.module('myApp', []);\n 6648:  * myApp.run(function($templateCache) {\n 6649   *   $templateCache.put('templateId.html', 'This is the content of the template');\n 6650   * });\n ....\n 11746   *\n 11747   * ```\n 11748:  * angular.module('myApp', [])\n 11749   * .factory('$xhrFactory', function() {\n 11750   *   return function createXhr(method, url) {\n .....\n 18047   * **Example**:  Consider the following case. <a name=\"example\"></a>\n 18048   *\n 18049:  * - your app is hosted at url `http://myapp.example.com/`\n 18050   * - but some of your templates are hosted on other domains you control such as\n 18051   *   `http://srv01.assets.example.com/`,  `http://srv02.assets.example.com/`, etc.\n 18052:  * - and you have an open redirect at `http://myapp.example.com/clickThru?...`.\n 18053   *\n 18054   * Here is what a secure configuration for this scenario might look like:\n 18055   *\n 18056   * ```\n 18057:  *  angular.module('myApp', []).config(function($sceDelegateProvider) {\n 18058   *    $sceDelegateProvider.resourceUrlWhitelist([\n 18059   *      // Allow same origin resource loads.\n .....\n 18065   *    // The blacklist overrides the whitelist so the open redirect here is blocked.\n 18066   *    $sceDelegateProvider.resourceUrlBlacklist([\n 18067:  *      'http://myapp.example.com/clickThru**'\n 18068   *    ]);\n 18069   *  });\n .....\n 18598   *\n 18599   * ```\n 18600:  * angular.module('myAppWithSceDisabledmyApp', []).config(function($sceProvider) {\n 18601   *   // Completely disable SCE.  For demonstration purposes only!\n 18602   *   // Do not use in new projects.\n .....\n 19635   * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 19636   * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 19637:  * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 19638:  * (`myapp_subsection_filterx`).\n 19639   * </div>\n 19640   *\n .....\n 19724     *    **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n 19725     *    Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n 19726:    *    your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n 19727:    *    (`myapp_subsection_filterx`).\n 19728     *    </div>\n 19729      * @param {Function} factory If the first argument was a string, a factory function for the filter to be registered.\n\n/Users/bwilson/Projects/korektu/bower_components/angular-loader/angular-loader.js:\n  351             * **Note:** Filter names must be valid angular {@link expression} identifiers, such as `uppercase` or `orderBy`.\n  352             * Names with special characters, such as hyphens and dots, are not allowed. If you wish to namespace\n  353:            * your filters, then you can use capitalization (`myappSubsectionFilterx`) or underscores\n  354:            * (`myapp_subsection_filterx`).\n  355             * </div>\n  356             */\n\n/Users/bwilson/Projects/korektu/bower_components/angular-mocks/angular-mocks.js:\n 1107    // The module code\n 1108    angular\n 1109:     .module('MyApp', [])\n 1110      .controller('MyController', MyController);\n 1111  \n ....\n 1140  \n 1141         // Set up the module\n 1142:        beforeEach(module('MyApp'));\n 1143  \n 1144         beforeEach(inject(function($injector) {\n ....\n 2368   *\n 2369   * ```js\n 2370:  *   var myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);\n 2371:  *   myAppDev.run(function($httpBackend) {\n 2372   *     var phones = [{name: 'phone1'}, {name: 'phone2'}];\n 2373   *\n ....\n 2389   *\n 2390   * ## Example\n 2391:  * <example name=\"httpbackend-e2e-testing\" module=\"myAppE2E\" deps=\"angular-mocks.js\">\n 2392   * <file name=\"app.js\">\n 2393:  *   var myApp = angular.module('myApp', []);\n 2394   *\n 2395:  *   myApp.controller('main', function($http) {\n 2396   *     var ctrl = this;\n 2397   *\n ....\n 2418   * </file>\n 2419   * <file name=\"e2e.js\">\n 2420:  *   var myAppDev = angular.module('myAppE2E', ['myApp', 'ngMockE2E']);\n 2421   *\n 2422:  *   myAppDev.run(function($httpBackend) {\n 2423   *     var phones = [{name: 'phone1'}, {name: 'phone2'}];\n 2424   *\n ....\n 2986     * ```js\n 2987     *\n 2988:    *   angular.module('myApplicationModule', [])\n 2989     *       .value('mode', 'app')\n 2990     *       .value('version', 'v1.0.1');\n 2991     *\n 2992     *\n 2993:    *   describe('MyApp', function() {\n 2994     *\n 2995     *     // You need to load modules that you want to test,\n 2996     *     // it loads only the \"ng\" module by default.\n 2997:    *     beforeEach(module('myApplicationModule'));\n 2998     *\n 2999     *\n\n/Users/bwilson/Projects/korektu/bower_components/angular-route/README.md:\n   18  \n   19  ```javascript\n   20: angular.module('myApp', [require('angular-route')]);\n   21  ```\n   22  \n   ..\n   36  \n   37  ```javascript\n   38: angular.module('myApp', ['ngRoute']);\n   39  ```\n   40  \n\n/Users/bwilson/Projects/korektu/node_modules/engine.io/README.md:\n  341  \n  342  ```\n  343: DEBUG=engine* node myapp\n  344  ```\n  345  \n\n/Users/bwilson/Projects/korektu/node_modules/fsevents/node_modules/node-pre-gyp/README.md:\n   78   - `--target_platform=win32`: Pass the target platform and override the host `platform`. Valid values are `linux`, `darwin`, `win32`, `sunos`, `freebsd`, `openbsd`, and `aix`.\n   79  \n   80: Both `--build-from-source` and `--fallback-to-build` can be passed alone or they can provide values. You can pass `--fallback-to-build=false` to override the option as declared in package.json. In addition to being able to pass `--build-from-source` you can also pass `--build-from-source=myapp` where `myapp` is the name of your module.\n   81  \n   82: For example: `npm install --build-from-source=myapp`. This is useful if:\n   83  \n   84:  - `myapp` is referenced in the package.json of a larger app and therefore `myapp` is being installed as a dependent with `npm install`.\n   85   - The larger app also depends on other modules installed with `node-pre-gyp`\n   86:  - You only want to trigger a source compile for `myapp` and the other modules.\n   87  \n   88  ### Configuring\n\n/Users/bwilson/Projects/korektu/node_modules/http-server/README.md:\n   21  # Installing as a node app\n   22  \n   23:      mkdir myapp\n   24:      cd myapp/\n   25       jitsu install http-server\n   26  \n\n/Users/bwilson/Projects/korektu/node_modules/karma/node_modules/colors/ReadMe.md:\n   94  \n   95  ```bash\n   96: node myapp.js --no-color\n   97  ```\n   98  \n\n/Users/bwilson/Projects/korektu/node_modules/log4js/examples/logstashUDP.js:\n    8      queue_size => 2\n    9      workers => 2\n   10:     type => myAppType\n   11    }\n   12  */\n   ..\n   22        \"port\": 10001,\n   23        \"type\": \"logstashUDP\",\n   24:       \"logType\": \"myAppType\", // Optional, defaults to 'category'\n   25        \"fields\": {             // Optional, will be added to the 'fields' object in logstash\n   26          \"field1\": \"value1\",\n\n/Users/bwilson/Projects/korektu/node_modules/log4js/test/logstashUDP-test.js:\n   46          \"port\": 10001,\n   47          \"type\": \"logstashUDP\",\n   48:         \"logType\": \"myAppType\",\n   49          \"category\": \"myLogger\",\n   50          \"fields\": {\n   ..\n   65        assert.equal(topic.results.offset, 0);\n   66        var json = JSON.parse(topic.results.buffer.toString());\n   67:       assert.equal(json.type, 'myAppType');\n   68        var fields = {\n   69          field1: 'value1',\n\n/Users/bwilson/Projects/korektu/node_modules/socket.io/Readme.md:\n  420  \n  421  ```\n  422: DEBUG=socket.io* node myapp\n  423  ```\n  424  \n\n52 matches across 11 files\n",
+			"settings":
+			{
+				"buffer_size": 19328,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/view1/view1.js",
+			"settings":
+			{
+				"buffer_size": 273,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -386,10 +462,15 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/bwilson/Projects/korektu"
+		"/Users/bwilson/Projects/korektu",
+		"/Users/bwilson/Projects/korektu/app/titles",
+		"/Users/bwilson/Projects/korektu/app/view1"
 	],
 	"file_history":
 	[
+		"/Users/bwilson/Projects/korektu/script.js",
+		"/Users/bwilson/Projects/korektu/index.html",
+		"/Users/bwilson/Desktop/index.html",
 		"/Users/bwilson/Sites/merovex.github.io/korektu/index.html",
 		"/Users/bwilson/Sites/merovex.github.io/korektu/js/korektu.js",
 		"/Users/bwilson/Sites/merovex.github.io/_layouts/page.html",
@@ -514,14 +595,11 @@
 		"/Users/bwilson/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_golden-ratio.scss",
 		"/Users/bwilson/Sites/merovex.github.io/_includes/subscribe.html",
-		"/Users/bwilson/Sites/merovex.github.io/_includes/footer.html",
-		"/Users/bwilson/Sites/merovex.github.io/pages/astro-empires/small-fleet-doctrine.md",
-		"/Users/bwilson/Sites/merovex.github.io/pages/astro-empires/production-structures.md",
-		"/Users/bwilson/Sites/merovex.github.io/pages/astro-empires/pring-construction-guide.md"
+		"/Users/bwilson/Sites/merovex.github.io/_includes/footer.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -539,6 +617,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"myApp",
 			"	-",
 			"craftmap",
 			"1.4.7",
@@ -665,8 +744,7 @@
 			"pf[",
 			"ratio",
 			"'lighten'",
-			"lighten",
-			"f["
+			"lighten"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -684,8 +762,859 @@
 	"groups":
 	[
 		{
+			"selected": 7,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 9,
+								"count": 10,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 90,
+								"count": 22,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/titles/titles.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 17,
+								"count": 0,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"auto_name": "titles.html",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							],
+							[
+								133,
+								133
+							],
+							[
+								152,
+								152
+							],
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/titles/titles.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 9,
+								"count": 0,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"auto_name": "titles.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "korektu.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "json"
+							},
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 13,
+								"count": 86,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19328,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										230,
+										235
+									],
+									[
+										405,
+										410
+									],
+									[
+										644,
+										649
+									],
+									[
+										708,
+										713
+									],
+									[
+										917,
+										922
+									],
+									[
+										1156,
+										1161
+									],
+									[
+										1220,
+										1225
+									],
+									[
+										1422,
+										1427
+									],
+									[
+										1450,
+										1455
+									],
+									[
+										1495,
+										1500
+									],
+									[
+										1665,
+										1670
+									],
+									[
+										1729,
+										1734
+									],
+									[
+										1910,
+										1915
+									],
+									[
+										2110,
+										2115
+									],
+									[
+										2180,
+										2185
+									],
+									[
+										2359,
+										2364
+									],
+									[
+										2559,
+										2564
+									],
+									[
+										2629,
+										2634
+									],
+									[
+										3091,
+										3096
+									],
+									[
+										3153,
+										3158
+									],
+									[
+										3275,
+										3280
+									],
+									[
+										3299,
+										3304
+									],
+									[
+										3322,
+										3327
+									],
+									[
+										3522,
+										3527
+									],
+									[
+										3778,
+										3783
+									],
+									[
+										4031,
+										4036
+									],
+									[
+										4212,
+										4217
+									],
+									[
+										4557,
+										4562
+									],
+									[
+										4682,
+										4687
+									],
+									[
+										4702,
+										4707
+									],
+									[
+										5162,
+										5167
+									],
+									[
+										5215,
+										5220
+									],
+									[
+										5585,
+										5590
+									],
+									[
+										5643,
+										5648
+									],
+									[
+										6224,
+										6229
+									],
+									[
+										6286,
+										6291
+									],
+									[
+										6509,
+										6514
+									],
+									[
+										6665,
+										6670
+									],
+									[
+										6785,
+										6790
+									],
+									[
+										6812,
+										6817
+									],
+									[
+										6825,
+										6830
+									],
+									[
+										6860,
+										6865
+									],
+									[
+										7068,
+										7073
+									],
+									[
+										7150,
+										7155
+									],
+									[
+										7174,
+										7179
+									],
+									[
+										7209,
+										7214
+									],
+									[
+										7364,
+										7369
+									],
+									[
+										7391,
+										7396
+									],
+									[
+										7404,
+										7409
+									],
+									[
+										7449,
+										7454
+									],
+									[
+										7628,
+										7633
+									],
+									[
+										7789,
+										7794
+									],
+									[
+										7985,
+										7990
+									],
+									[
+										8160,
+										8165
+									],
+									[
+										8274,
+										8279
+									],
+									[
+										8427,
+										8432
+									],
+									[
+										9031,
+										9036
+									],
+									[
+										9045,
+										9050
+									],
+									[
+										9141,
+										9146
+									],
+									[
+										9187,
+										9192
+									],
+									[
+										9259,
+										9264
+									],
+									[
+										9462,
+										9467
+									],
+									[
+										9652,
+										9657
+									],
+									[
+										9673,
+										9678
+									],
+									[
+										9844,
+										9849
+									],
+									[
+										10031,
+										10036
+									],
+									[
+										10157,
+										10162
+									],
+									[
+										10513,
+										10518
+									],
+									[
+										10756,
+										10761
+									],
+									[
+										10945,
+										10950
+									],
+									[
+										11421,
+										11426
+									],
+									[
+										11483,
+										11488
+									],
+									[
+										11605,
+										11610
+									],
+									[
+										11629,
+										11634
+									],
+									[
+										11652,
+										11657
+									],
+									[
+										11852,
+										11857
+									],
+									[
+										12108,
+										12113
+									],
+									[
+										12361,
+										12366
+									],
+									[
+										12542,
+										12547
+									],
+									[
+										12887,
+										12892
+									],
+									[
+										13012,
+										13017
+									],
+									[
+										13032,
+										13037
+									],
+									[
+										13492,
+										13497
+									],
+									[
+										13545,
+										13550
+									],
+									[
+										13915,
+										13920
+									],
+									[
+										13973,
+										13978
+									],
+									[
+										14554,
+										14559
+									],
+									[
+										14616,
+										14621
+									],
+									[
+										14839,
+										14844
+									],
+									[
+										14995,
+										15000
+									],
+									[
+										15115,
+										15120
+									],
+									[
+										15142,
+										15147
+									],
+									[
+										15155,
+										15160
+									],
+									[
+										15190,
+										15195
+									],
+									[
+										15398,
+										15403
+									],
+									[
+										15480,
+										15485
+									],
+									[
+										15504,
+										15509
+									],
+									[
+										15539,
+										15544
+									],
+									[
+										15694,
+										15699
+									],
+									[
+										15721,
+										15726
+									],
+									[
+										15734,
+										15739
+									],
+									[
+										15779,
+										15784
+									],
+									[
+										15958,
+										15963
+									],
+									[
+										16119,
+										16124
+									],
+									[
+										16315,
+										16320
+									],
+									[
+										16490,
+										16495
+									],
+									[
+										16604,
+										16609
+									],
+									[
+										16757,
+										16762
+									],
+									[
+										17361,
+										17366
+									],
+									[
+										17375,
+										17380
+									],
+									[
+										17471,
+										17476
+									],
+									[
+										17517,
+										17522
+									],
+									[
+										17589,
+										17594
+									],
+									[
+										17792,
+										17797
+									],
+									[
+										17982,
+										17987
+									],
+									[
+										18003,
+										18008
+									],
+									[
+										18174,
+										18179
+									],
+									[
+										18361,
+										18366
+									],
+									[
+										18487,
+										18492
+									],
+									[
+										18843,
+										18848
+									],
+									[
+										19086,
+										19091
+									],
+									[
+										19275,
+										19280
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								11000,
+								11000
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 38,
+								"count": 1245,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/view1/view1.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								41
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
