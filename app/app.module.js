@@ -6,6 +6,7 @@ angular.module('korektuApp', [
   'ngResource',
   'korektuApp.view1',
   'korektuApp.view2',
+  'korektuApp.title',
   'korektuApp.version'
 ])
 
