@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
   helper_method :correct_user?
 
   private
+    def get_book
+      id = params[:book_id] or params[:id]
+      @book = Book.find(id)
+    end
     def current_user
       begin
         @current_user ||= User.find(session[:user_id]) if session[:user_id]

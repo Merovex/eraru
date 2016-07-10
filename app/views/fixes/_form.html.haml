@@ -1,0 +1,35 @@
+.row
+  %form.col.s12
+    .row
+      .input-field.col.m6.s12
+        %input#icon_prefix.validate{:type => "text"}/
+        %label{:for => "icon_prefix"} Name (optional)
+      .g-recaptcha.col.m6.s12{"data-sitekey" => "6LdReyQTAAAAANSlGTjR5bKSmiU4Y3XdCuOmbuvx"}
+    .row
+      .input-field.col.m6.s12
+        %select.browser-default
+          %option{:disabled => "disabled", :selected => "selected", :value => ""} Version of Book with Error
+          %option{:value => "2016-09-01"} 2016-09-01
+          %option{:value => "2015-10-02"} 2015-10-02
+          %option{:value => "2014-05-03"} 2014-05-03
+      .input-field.col.m6.s12
+        %select.browser-default
+          %option{:disabled => "disabled", :selected => "selected", :value => ""} Select type of correction
+          %option{:value => "TYPO"} Typo
+          %option{:value => "ERROR"} Technical Error
+          %option{:value => "SUGGEST"} Suggestion
+    .row
+      .input-field.col.m5.s12
+        %input#icon_prefix.validate{:type => "number"}/
+        %label{:for => "icon_prefix"} Print Page number
+      .col.m2.s12 ...or...
+      .input-field.col.m5.s12
+        %input#icon_telephone.validate{:type => "number"}/
+        %label{:for => "icon_telephone"} Kindle Location
+    .row
+      .input-field.col.s12
+        %textarea#textarea1.materialize-textarea{:rows => "10"}
+        %label{:for => "textarea1"} Textarea
+    .row
+      .input-field.col.s12
+        %button.btn Submit

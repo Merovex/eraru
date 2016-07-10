@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Version:
+  = @fix.version
+%p
+  %b Book:
+  = @fix.book
+%p
+  %b Contributor:
+  = @fix.contributor
+%p
+  %b Type:
+  = @fix.type
+%p
+  %b Fixed:
+  = @fix.fixed
+%p
+  %b Text:
+  = @fix.text
+
+= link_to 'Edit', edit_fix_path(@fix)
+\|
+= link_to 'Back', fixes_path

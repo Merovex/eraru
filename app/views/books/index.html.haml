@@ -1,0 +1,19 @@
+%h1 Listing books
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Version
+      %th Released on
+
+  %tbody
+    - @books.each do |book|
+      %tr
+        %td= link_to book.title, book
+        %td= book.version
+        %td= book.released_on
+
+%br
+
+= link_to 'New Book', new_book_path
