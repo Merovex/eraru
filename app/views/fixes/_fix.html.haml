@@ -1,0 +1,5 @@
+.row
+  .col.s12
+    %h4= "#{fix.book.title} #{fix.kind} @#{fix.location} "
+    %p= "#{fix_name(fix)}  <abbr title='#{fix.created_at}'>#{time_ago_in_words fix.created_at} ago</abbr>:".html_safe
+    %p= fix.text

@@ -1,31 +1,5 @@
 %h1 Listing fixes
 
-%table
-  %thead
-    %tr
-      %th Version
-      %th Book
-      %th Contributor
-      %th Type
-      %th Fixed
-      %th Text
-      %th
-      %th
-      %th
-
-  %tbody
-    - @fixes.each do |fix|
-      %tr
-        %td= fix.version
-        %td= fix.book
-        %td= fix.contributor
-        %td= fix.type
-        %td= fix.fixed
-        %td= fix.text
-        %td= link_to 'Show', fix
-        %td= link_to 'Edit', edit_fix_path(fix)
-        %td= link_to 'Destroy', fix, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
 = link_to 'New Fix', new_book_fix_path(@book)
+
+= render :partial => @book.fixes

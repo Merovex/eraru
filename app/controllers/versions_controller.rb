@@ -1,10 +1,11 @@
 class VersionsController < ApplicationController
+  before_action :set_book
   before_action :set_version, only: [:show, :edit, :update, :destroy]
 
   # GET /versions
   # GET /versions.json
   def index
-    @versions = Version.all
+    @versions = @book.versions.all
   end
 
   # GET /versions/1
@@ -14,7 +15,7 @@ class VersionsController < ApplicationController
 
   # GET /versions/new
   def new
-    @version = Version.new
+    @version = @book.versions.new
   end
 
   # GET /versions/1/edit
@@ -24,15 +25,15 @@ class VersionsController < ApplicationController
   # POST /versions
   # POST /versions.json
   def create
-    @version = Version.new(version_params)
+    @version = @book.versions.new(version_params)
 
     respond_to do |format|
-      if @version.save
+      if @book.versions.save
         format.html { redirect_to @version, notice: 'Version was successfully created.' }
         format.json { render :show, status: :created, location: @version }
       else
         format.html { render :new }
-        format.json { render json: @version.errors, status: :unprocessable_entity }
+        format.json { render json: @book.versions.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,12 +42,12 @@ class VersionsController < ApplicationController
   # PATCH/PUT /versions/1.json
   def update
     respond_to do |format|
-      if @version.update(version_params)
+      if @book.versions.update(version_params)
         format.html { redirect_to @version, notice: 'Version was successfully updated.' }
         format.json { render :show, status: :ok, location: @version }
       else
         format.html { render :edit }
-        format.json { render json: @version.errors, status: :unprocessable_entity }
+        format.json { render json: @book.versions.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,7 +55,7 @@ class VersionsController < ApplicationController
   # DELETE /versions/1
   # DELETE /versions/1.json
   def destroy
-    @version.destroy
+    @book.versions.destroy
     respond_to do |format|
       format.html { redirect_to versions_url, notice: 'Version was successfully destroyed.' }
       format.json { head :no_content }
@@ -64,7 +65,7 @@ class VersionsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_version
-      @version = Version.find(params[:id])
+      @version = @book.versions.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

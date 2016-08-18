@@ -11,26 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160710155919) do
+ActiveRecord::Schema.define(version: 20160711101555) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "books", force: true do |t|
     t.string   "title"
-    t.string   "string"
+    t.string   "slug"
     t.string   "version"
-    t.string   "released_on"
-    t.string   "date"
+    t.date     "released_on"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "books", ["slug"], name: "index_books_on_slug", using: :btree
+
   create_table "fixes", force: true do |t|
     t.integer  "version_id"
     t.integer  "book_id"
-    t.integer  "contributor_id"
-    t.string   "type"
+    t.integer  "location"
+    t.string   "kind"
+    t.string   "email"
+    t.string   "name"
     t.integer  "fixed"
     t.text     "text"
     t.datetime "created_at"
@@ -38,8 +41,20 @@ ActiveRecord::Schema.define(version: 20160710155919) do
   end
 
   add_index "fixes", ["book_id"], name: "index_fixes_on_book_id", using: :btree
-  add_index "fixes", ["contributor_id"], name: "index_fixes_on_contributor_id", using: :btree
   add_index "fixes", ["version_id"], name: "index_fixes_on_version_id", using: :btree
+
+  create_table "friendly_id_slugs", force: true do |t|
+    t.string   "slug",                      null: false
+    t.integer  "sluggable_id",              null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -51,7 +66,7 @@ ActiveRecord::Schema.define(version: 20160710155919) do
 
   create_table "versions", force: true do |t|
     t.integer  "book_id"
-    t.string   "version"
+    t.string   "name"
     t.date     "released_on"
     t.datetime "created_at"
     t.datetime "updated_at"

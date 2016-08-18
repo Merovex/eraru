@@ -1,11 +1,11 @@
 class FixesController < ApplicationController
-  before_action :get_book
+  before_action :set_book
   before_action :set_fix, only: [:show, :edit, :update, :destroy]
 
   # GET /fixes
   # GET /fixes.json
   def index
-    @fixes = Fix.all
+    @fixes = @book.fixes
   end
 
   # GET /fixes/1
@@ -15,7 +15,7 @@ class FixesController < ApplicationController
 
   # GET /fixes/new
   def new
-    @fix = Fix.new
+    @fix = @book.fixes.new
   end
 
   # GET /fixes/1/edit
@@ -25,11 +25,12 @@ class FixesController < ApplicationController
   # POST /fixes
   # POST /fixes.json
   def create
-    @fix = Fix.new(fix_params)
+    @fix = @book.fixes.new(fix_params)
+    # raise @fix.inspect
 
     respond_to do |format|
       if @fix.save
-        format.html { redirect_to @fix, notice: 'Fix was successfully created.' }
+        format.html { redirect_to @book, notice: 'Fix was successfully created.' }
         format.json { render :show, status: :created, location: @fix }
       else
         format.html { render :new }
@@ -43,7 +44,7 @@ class FixesController < ApplicationController
   def update
     respond_to do |format|
       if @fix.update(fix_params)
-        format.html { redirect_to @fix, notice: 'Fix was successfully updated.' }
+        format.html { redirect_to @book, notice: 'Fix was successfully updated.' }
         format.json { render :show, status: :ok, location: @fix }
       else
         format.html { render :edit }
@@ -65,11 +66,12 @@ class FixesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_fix
-      @fix = Fix.find(params[:id])
+      @fix = @book.fixes.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def fix_params
-      params.require(:fix).permit(:version_id, :book_id, :contributor_id, :type, :fixed, :text)
+      # raise params.inspect
+      params.require(:fix).permit(:version_id, :book_id, :kind, :fixed, :text, :email, :name, :location)
     end
 end

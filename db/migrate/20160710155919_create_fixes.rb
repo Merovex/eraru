@@ -3,8 +3,10 @@ class CreateFixes < ActiveRecord::Migration
     create_table :fixes do |t|
       t.references :version, index: true
       t.references :book, index: true
-      t.references :contributor, index: true
-      t.string :type
+      t.integer :location
+      t.string :kind
+      t.string :email
+      t.string :name
       t.integer :fixed
       t.text :text
 

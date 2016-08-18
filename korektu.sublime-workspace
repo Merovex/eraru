@@ -1,0 +1,1495 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"aa",
+				"aa"
+			],
+			[
+				"btn-",
+				"btn-secondary"
+			],
+			[
+				"set",
+				"setContrastier"
+			],
+			[
+				"nab",
+				"navbar-link-color"
+			],
+			[
+				"link",
+				"link-visited-color"
+			],
+			[
+				"navbar",
+				"navbar-link-color"
+			],
+			[
+				"gold-",
+				"gold-ratio-2"
+			],
+			[
+				"ass",
+				"assigning"
+			],
+			[
+				"page",
+				"new_page_ext"
+			],
+			[
+				"last",
+				"last_test_id"
+			],
+			[
+				"questions",
+				"questions"
+			],
+			[
+				"pro",
+				"project_id"
+			],
+			[
+				"creatd",
+				"created_at"
+			],
+			[
+				"sub",
+				"submited_by"
+			],
+			[
+				"html",
+				"html_safe"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"del",
+				"delta"
+			],
+			[
+				"book",
+				"bookmaker_path"
+			],
+			[
+				"octopre",
+				"octopress_path"
+			],
+			[
+				"da",
+				"day_progress"
+			],
+			[
+				"peep",
+				"peeping"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"Date",
+				"DateTime"
+			],
+			[
+				"dec",
+				"description"
+			],
+			[
+				"location",
+				"location_id"
+			],
+			[
+				"in",
+				"inspect"
+			],
+			[
+				"flash",
+				"flash_class"
+			],
+			[
+				"hea",
+				"header_row"
+			],
+			[
+				"my",
+				"my_url"
+			],
+			[
+				"file",
+				"FileUtil"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"series",
+				"series_id"
+			],
+			[
+				"trac",
+				"trackable_id"
+			],
+			[
+				"n",
+				"nam	namespace :.. do .. end"
+			],
+			[
+				"k",
+				"k"
+			],
+			[
+				"character",
+				"character"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"rack",
+				"rack_env"
+			],
+			[
+				"alias",
+				"alias_path"
+			],
+			[
+				"alia",
+				"alias_file"
+			],
+			[
+				"if",
+				"if	if … end"
+			],
+			[
+				"title",
+				"titleize"
+			],
+			[
+				"ur",
+				"urlize"
+			],
+			[
+				"t",
+				"t"
+			],
+			[
+				"g",
+				"gsu	gsub(/../) { |match| .. }"
+			],
+			[
+				"File",
+				"FileUtils"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"url",
+				"url"
+			],
+			[
+				"days",
+				"days_left"
+			],
+			[
+				"today",
+				"todays_goal"
+			],
+			[
+				"data",
+				"data_file"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1010,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/fixes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 2965,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/books_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1803,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Ruby/Ruby.sublime-build",
+					""
+				],
+				[
+					"Packages/Rake/Rake/Rake.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Ruby/Ruby.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"j",
+				"Jekyll: Promote draft to post"
+			],
+			[
+				"jek",
+				"Jekyll: Remove template"
+			],
+			[
+				"je",
+				"Jekyll: Browse templates..."
+			],
+			[
+				"date",
+				"Jekyll: Insert current datetime"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown (Jekyll)"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"jeky",
+				"Jekyll: Promote draft to post..."
+			],
+			[
+				"markdo",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pm",
+				"PmWiki: Pull Page"
+			],
+			[
+				"",
+				"Bookmaker: Preview"
+			],
+			[
+				"pmw",
+				"PmWiki: Retrieve New Page"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"t",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"to",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"tod",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"b",
+				"Bookmaker: Check"
+			],
+			[
+				"oc",
+				"Octopress: Generate"
+			],
+			[
+				"o",
+				"Octopress: Generate"
+			],
+			[
+				"oct",
+				"Octopress: Generate"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"rake",
+				"Set Syntax: Literate Haskell"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 315.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"os.system(\"rake preview\")",
+			"import os",
+			"os.system(\"rake preview\")",
+			"call(\"rake preview\")",
+			"from subprocess import call",
+			"call(\"rake preview\")",
+			"`rake preview`",
+			"rake preview",
+			"exit",
+			"ls",
+			"pwd",
+			"rake preview"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/bwilson/Projects/korektu",
+		"/Users/bwilson/Projects/korektu/app",
+		"/Users/bwilson/Projects/korektu/app/controllers",
+		"/Users/bwilson/Projects/korektu/app/views",
+		"/Users/bwilson/Projects/korektu/app/views/layouts",
+		"/Users/bwilson/Projects/korektu/db",
+		"/Users/bwilson/Projects/korektu/db/migrate"
+	],
+	"file_history":
+	[
+		"/Users/bwilson/Projects/korektu/app/controllers/application_controller.rb",
+		"/Users/bwilson/Projects/korektu/db/migrate/20160710153525_create_books.rb",
+		"/Users/bwilson/Projects/korektu/app/views/fixes/new.html.haml",
+		"/Users/bwilson/Projects/korektu/app/controllers/fixes_controller.rb",
+		"/Users/bwilson/Projects/korektu/app/views/fixes/_form.html.haml",
+		"/Users/bwilson/Projects/korektu/Gemfile",
+		"/Users/bwilson/Projects/korektu/app/models/book.rb",
+		"/Users/bwilson/Projects/korektu/config/routes.rb",
+		"/Users/bwilson/Projects/korektu/db/schema.rb",
+		"/Users/bwilson/Projects/korektu/app/views/fixes/index.html.haml",
+		"/Users/bwilson/Projects/korektu/app/views/books/index.html.haml",
+		"/Users/bwilson/Projects/korektu/app/views/layouts/application.html.haml",
+		"/Users/bwilson/Projects/korektu/app/views/books/show.html.haml",
+		"/Users/bwilson/Projects/korektu/app/controllers/books_controller.rb",
+		"/Users/bwilson/Projects/korektu/app/models/version.rb",
+		"/Users/bwilson/Projects/korektu/app/views/books/_form.html.haml",
+		"/Users/bwilson/Projects/korektu/app/index.html",
+		"/Users/bwilson/Projects/korektu/db/migrate/20160710155919_create_fixes.rb",
+		"/Users/bwilson/Projects/korektu/app/corrections/corrections.js",
+		"/Users/bwilson/Projects/korektu/app/corrections/index.html",
+		"/Users/bwilson/Projects/korektu/app/app.config.js",
+		"/Users/bwilson/Projects/korektu/app/title/title.js",
+		"/Users/bwilson/Projects/korektu/node_modules/cognito-helper/config.js",
+		"/Users/bwilson/Projects/korektu/app/app.module.js",
+		"/Users/bwilson/Projects/korektu/app/aws.js",
+		"/Users/bwilson/Projects/korektu/app/title/index.html",
+		"/Users/bwilson/Projects/korektu/app/title/title.html",
+		"/Users/bwilson/Projects/korektu/app/title/_form.html",
+		"/Users/bwilson/Projects/korektu/korektu.sublime-project",
+		"/Users/bwilson/Projects/korektu/node_modules/karma/lib/events.js",
+		"/Users/bwilson/Projects/korektu/package.json",
+		"/Users/bwilson/Projects/korektu/npm-debug.log",
+		"/Users/bwilson/Projects/korektu/app/index-async.html",
+		"/Users/bwilson/Projects/korektu/bower.json",
+		"/Users/bwilson/Projects/korektu/app/view1/view1.js",
+		"/Users/bwilson/Projects/korektu/README.md",
+		"/Users/bwilson/Projects/korektu/app/titles/titles.html",
+		"/Users/bwilson/Projects/korektu/app/app.js",
+		"/Users/bwilson/Projects/korektu/app/titles/titles.js",
+		"/Users/bwilson/Projects/korektu/script.js",
+		"/Users/bwilson/Projects/korektu/index.html",
+		"/Users/bwilson/Desktop/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/korektu/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/korektu/js/korektu.js",
+		"/Users/bwilson/Sites/merovex.github.io/_layouts/page.html",
+		"/Users/bwilson/Sites/merovex.github.io/eraru/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/javascripts/recaptcha.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/material-2016/style.scss",
+		"/Users/bwilson/Sites/merovex.github.io/pages/map.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/belly-scripts.html",
+		"/Users/bwilson/Sites/merovex.github.io/eraru/pages/home.html",
+		"/Users/bwilson/Sites/merovex.github.io/pages/eraroj/bellicose.md",
+		"/Users/bwilson/Sites/merovex.github.io/_layouts/eraru.html",
+		"/Users/bwilson/Sites/merovex.github.io/_site/eraru/bellicose/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/eraru/js/eraru.js",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/material/eraru-header.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/material/head.html",
+		"/Users/bwilson/Sites/merovex.github.io/_layouts/default.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/material/navigation.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/material/eraru-nav.html",
+		"/Users/bwilson/Sites/merovex.github.io/js/eraru.js",
+		"/Users/bwilson/Sites/merovex.github.io/LICENSE.md",
+		"/Users/bwilson/Sites/merovex.github.io/pages/doi.md",
+		"/Users/bwilson/Sites/merovex.github.io/pages/policies.md",
+		"/Users/bwilson/Sites/merovex.github.io/Gemfile",
+		"/Users/bwilson/Sites/merovex.github.io/pages/diceware.md",
+		"/Users/bwilson/Sites/merovex.github.io/_layouts/post.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/social_networks.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_style.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-06-18-unsharpening-the-axe.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/forms/mailchimp.html",
+		"/Users/bwilson/Sites/merovex.github.io/merovex.sublime-project",
+		"/Users/bwilson/Sites/merovex.github.io/pages/astro-empires/advanced-base-guide.md",
+		"/Users/bwilson/Sites/merovex.github.io/pages/follow.md",
+		"/Users/bwilson/Sites/merovex.github.io/_drafts/unsharpening-the-axe.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/pages/join.md",
+		"/Users/bwilson/Sites/merovex.github.io/pages/vw/engine-build.md",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/forbearance_signup.html",
+		"/Users/bwilson/Sites/merovex.github.io/pages/astro-empires/seven-ten-guide.md",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/shared/astro_empire_header.html",
+		"/Users/bwilson/Sites/merovex.github.io/404.md",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/frontpage/pms.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/frontpage/bellicose.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/frontpage/about.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/books.html",
+		"/Users/bwilson/Sites/merovex.github.io/categories.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/book-summary.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_style.scss",
+		"/Users/bwilson/Sites/merovex.github.io/news/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/paginator.html",
+		"/Users/bwilson/Sites/merovex.github.io/pages/postal-marine-series/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/index.html",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/navigation.html",
+		"/Users/bwilson/Sites/merovex.github.io/news.html",
+		"/Users/bwilson/Sites/merovex.github.io/_config.yml",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_navbar.scss",
+		"/Users/bwilson/Sites/merovex.github.io/pages/about.md",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_color.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/after_body.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_intro.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_frontpage.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/screen.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_typography.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-03-12-murder-on-guna-prime.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/blog_cards.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2016/_mixins.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/shared/stuff.html",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2015-08-23-jonaldy-ammonett.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_drafts/murder-on-guna-prime.markdown",
+		"/Users/bwilson/Library/Application Support/Sublime Text 3/Packages/User/Jekyll Templates/post.yaml",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-03-12-bophendze-on-guna-prime.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_drafts/non-profit-business-model-canvas.markdown",
+		"/Users/bwilson/Downloads/subtitles.vtt",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/categories_list.html",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2014-11-02-machines-like-us.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/same.html",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-02-06-fragile-societies-resilient-citizens.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_layouts/hero_post.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_hero-post.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_typography.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/post_meta.html",
+		"/Users/bwilson/Sites/merovex.github.io/_sass/2015/_blog.scss",
+		"/Users/bwilson/Sites/merovex.github.io/_drafts/the-escalator.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-02-11-random-car-advice.markdown",
+		"/Users/bwilson/Sites/merovex.github.io/_includes/head/twitter_card.html",
+		"/Users/bwilson/Library/Application Support/Sublime Text 3/Installed Packages/Jekyll.sublime-package",
+		"/Users/bwilson/Library/Application Support/Sublime Text 3/Packages/User/Jekyll Templates/Template.yaml",
+		"/Users/bwilson/Sites/merovex.github.io/_drafts/leviticus.markdown"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"app",
+			"",
+			"-_site",
+			"",
+			"*.scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"2016-09-01",
+			".field",
+			"field",
+			"dev",
+			"div",
+			"=string",
+			"= ",
+			"div",
+			" ",
+			"\\r\\n ",
+			"></script>",
+			"/\n",
+			"/",
+			".field",
+			"=d",
+			"=s",
+			"=",
+			" %>",
+			"title",
+			"'title",
+			"=",
+			"$scope",
+			"userId",
+			"view2",
+			"titleCtrl",
+			"view2",
+			"myApp",
+			"1",
+			"home",
+			"templates",
+			"src",
+			"myApp",
+			"View1",
+			"view1",
+			"myApp",
+			"	-",
+			"craftmap",
+			"1.4.7",
+			"scotchApp",
+			"col s",
+			"<i class=\"material-icons",
+			"\n",
+			"a class",
+			"strong class='text-primary'",
+			"<a name='toc",
+			"<h3>",
+			"</h2>",
+			"<h2>",
+			"<sup",
+			"<td align='left'><strong>",
+			" align='center'",
+			"<tr>",
+			"<th>",
+			"td align='center'><strong>",
+			"\n\n\n",
+			"><tr>",
+			"\n#### ",
+			"\n### ",
+			"### ",
+			"####",
+			"###",
+			">\n\n</tr>",
+			"\n\n\n",
+			"></tr>",
+			"<h4>",
+			"<h3>",
+			"<h3'>",
+			"<h4'>",
+			"h4 id='toc",
+			"h3 id='toc",
+			" id='toc",
+			"col-sm-offset",
+			"---",
+			"col-xs-offset",
+			"offset-",
+			"/news/{{",
+			"href='",
+			"href='/page",
+			"post",
+			"dev ",
+			"class='",
+			"Home",
+			"'/'",
+			"paginate",
+			"<div>",
+			"%} {%",
+			"X: ",
+			"page",
+			"'/>",
+			"3",
+			"\n    text-align: center;",
+			"background: $background-color url(https://s3.amazonaws.com/dausha/images/pbg.jpg) no-repeat top left fixed;\n				background-size: cover;\n",
+			".3",
+			".navbar ",
+			"navbar-custom",
+			"{{ site.color.primary-dark }}",
+			"@import",
+			"’",
+			"$-  ",
+			":",
+			"  ",
+			" \n\n",
+			"   ",
+			"—",
+			"$-",
+			"\"\n",
+			"”",
+			"“",
+			"\n\n\n",
+			"\n ",
+			"\n$-",
+			"\n ",
+			"”",
+			"\n“",
+			"\n ",
+			"\n",
+			": ",
+			"xs-col",
+			"class",
+			"%}",
+			"t }}",
+			"title",
+			" dev",
+			"sm",
+			"page",
+			"footer",
+			"aside",
+			"color: white;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/application_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1010,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 35,
+								"count": 85,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/fixes_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 2,
+								"count": 149,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "db/schema.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2965,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1020,
+								1020
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 254,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 379.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/books_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1613,
+								1549
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 144,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 27.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 203.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 114.0
+	},
+	"pinned_build_system": "",
+	"project": "korektu.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sc",
+				"db/schema.rb"
+			],
+			[
+				"fixes_con",
+				"app/controllers/fixes_controller.rb"
+			],
+			[
+				"books_c",
+				"app/controllers/books_controller.rb"
+			],
+			[
+				"appli",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"boo",
+				"app/models/book.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"_form",
+				"app/views/fixes/_form.html.haml"
+			],
+			[
+				"fixes/n",
+				"app/views/fixes/new.html.haml"
+			],
+			[
+				"fixes/_",
+				"app/views/fixes/_form.html.haml"
+			],
+			[
+				"fixes/in",
+				"app/views/fixes/index.html.haml"
+			],
+			[
+				"fixes_co",
+				"app/controllers/fixes_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"books/in",
+				"app/views/books/index.html.haml"
+			],
+			[
+				"books/sho",
+				"app/views/books/show.html.haml"
+			],
+			[
+				"application.h",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"books/",
+				"app/views/books/_form.html.haml"
+			],
+			[
+				"version",
+				"app/models/version.rb"
+			],
+			[
+				"book",
+				"app/models/book.rb"
+			],
+			[
+				"books_con",
+				"app/controllers/books_controller.rb"
+			],
+			[
+				"books.",
+				"db/migrate/20160710153525_create_books.rb"
+			],
+			[
+				"events",
+				"node_modules/karma/lib/events.js"
+			],
+			[
+				"bell",
+				"_includes/belly-scripts.html"
+			],
+			[
+				"pag",
+				"_layouts/page.html"
+			],
+			[
+				"eraru",
+				"_layouts/eraru.html"
+			],
+			[
+				"eraru/b",
+				"_site/eraru/bellicose/index.html"
+			],
+			[
+				"material/h",
+				"_includes/material/head.html"
+			],
+			[
+				"defau",
+				"_layouts/default.html"
+			],
+			[
+				"nav",
+				"_includes/material/navigation.html"
+			],
+			[
+				"eraru/in",
+				"eraru/index.html"
+			],
+			[
+				"belly",
+				"_includes/belly-scripts.html"
+			],
+			[
+				"lic",
+				"LICENSE.md"
+			],
+			[
+				"poli",
+				"pages/policies.md"
+			],
+			[
+				"sty",
+				"_sass/2015/_style.scss"
+			],
+			[
+				"socia",
+				"_includes/social_networks.html"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"dice",
+				"pages/diceware.md"
+			],
+			[
+				"unsh",
+				"_posts/2016-06-18-unsharpening-the-axe.markdown"
+			],
+			[
+				"chim",
+				"_includes/forms/mailchimp.html"
+			],
+			[
+				"for",
+				"_includes/forbearance_signup.html"
+			],
+			[
+				"shared",
+				"_includes/shared/astro_empire_header.html"
+			],
+			[
+				"seven-",
+				"pages/astro-empires/seven-ten-guide.md"
+			],
+			[
+				"vw/eng",
+				"pages/vw/engine-build.md"
+			],
+			[
+				"advance",
+				"pages/astro-empires/advanced-base-guide.md"
+			],
+			[
+				"404",
+				"404.md"
+			],
+			[
+				"pms.",
+				"_includes/frontpage/pms.html"
+			],
+			[
+				"bellico",
+				"_includes/frontpage/bellicose.html"
+			],
+			[
+				"about",
+				"_includes/frontpage/about.html"
+			],
+			[
+				"books.h",
+				"_includes/books.html"
+			],
+			[
+				"categor",
+				"categories.html"
+			],
+			[
+				"book-su",
+				"_includes/book-summary.html"
+			],
+			[
+				"paginator",
+				"_includes/paginator.html"
+			],
+			[
+				"news/",
+				"news/index.html"
+			],
+			[
+				"new",
+				"news.html"
+			],
+			[
+				"navig",
+				"_includes/navigation.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"postal-m",
+				"pages/postal-marine-series/index.html"
+			],
+			[
+				"naviga",
+				"_includes/navigation.html"
+			],
+			[
+				"postal-",
+				"pages/postal-marine-series/index.html"
+			],
+			[
+				"navigation",
+				"_includes/navigation.html"
+			],
+			[
+				"murder",
+				"_posts/2016-03-12-murder-on-guna-prime.markdown"
+			],
+			[
+				"jonaldy",
+				"_posts/2015-08-23-jonaldy-ammonett.markdown"
+			],
+			[
+				"style",
+				"_sass/2015/_style.scss"
+			],
+			[
+				"machines",
+				"_posts/2014-11-02-machines-like-us.markdown"
+			],
+			[
+				"frag",
+				"_posts/2016-02-06-fragile-societies-resilient-citizens.markdown"
+			],
+			[
+				"categories_l",
+				"_includes/categories_list.html"
+			],
+			[
+				"cate",
+				"categories.html"
+			],
+			[
+				"fragil",
+				"_posts/2016-02-06-fragile-societies-resilient-citizens.markdown"
+			],
+			[
+				"typ",
+				"_sass/2015/_typography.scss"
+			],
+			[
+				"post_meta",
+				"_includes/post_meta.html"
+			],
+			[
+				"random",
+				"_posts/2016-02-11-random-car-advice.markdown"
+			],
+			[
+				"car",
+				"_includes/head/twitter_card.html"
+			],
+			[
+				"dictate",
+				"_posts/2016-01-30-dictate-your-book.md"
+			],
+			[
+				"badw",
+				"pages/bad-writing-advice.md"
+			],
+			[
+				"quiet",
+				"_posts/2014-12-07-quiet-rituals.markdown"
+			],
+			[
+				"contras",
+				"pages/contrastier.html"
+			],
+			[
+				"",
+				"~/Library/Application Support/Sublime Text 3/Packages/User/Jekyll Templates/photo post.yaml"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"_con",
+				"_config.yml"
+			],
+			[
+				"head",
+				"_includes/head.html"
+			],
+			[
+				"catego",
+				"categories.html"
+			],
+			[
+				"style.sc",
+				"_sass/2015/_style.scss"
+			],
+			[
+				"tags.h",
+				"tags/index.html"
+			],
+			[
+				"_config",
+				"_config.yml"
+			],
+			[
+				"bad-w",
+				"pages/bad-writing-advice.md"
+			],
+			[
+				"copy",
+				"_drafts/copyright-work-product.markdown"
+			],
+			[
+				"copyright",
+				"_drafts/copyright-response.markdown"
+			],
+			[
+				"santa",
+				"_posts/2015-12-04-truth-about-santa-claus.markdown"
+			],
+			[
+				"39cents",
+				"_posts/2014-10-15-39-cents-a-day.markdown"
+			],
+			[
+				"ruby",
+				"_posts/2015-10-13-problem-with-rubys-aws-sdk-v2.markdown"
+			],
+			[
+				"dictat",
+				"_posts/2016-01-30-dictate-your-book.md"
+			],
+			[
+				"typography",
+				"_sass/2015/_typography.scss"
+			],
+			[
+				"categories_list",
+				"_includes/categories_list.html"
+			],
+			[
+				"print",
+				"_sass/print.scss"
+			],
+			[
+				"cator",
+				"categories.html"
+			],
+			[
+				"sound-bo",
+				"_posts/2014-11-11-sound-booth-three.markdown"
+			],
+			[
+				"vo",
+				"_posts/2014-08-31-so-im-building-a-vo-sound-booth-2.markdown"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"tags",
+				"tags/index.html"
+			],
+			[
+				"sidebar",
+				"_includes/sidebar.html"
+			],
+			[
+				"print.",
+				"_sass/print.scss"
+			],
+			[
+				"hereb",
+				"_posts/2014-08-17-here-be-dragons-dictating.markdown"
+			],
+			[
+				"dict",
+				"_posts/2016-01-30-dictate-your-book.md"
+			],
+			[
+				"face",
+				"_includes/head/facebook_ogp.html"
+			],
+			[
+				"sideb",
+				"_includes/sidebar.html"
+			],
+			[
+				"astro",
+				"_includes/shared/astro_empire_header.html"
+			],
+			[
+				"header",
+				"_includes/shared/astro_empire_header.html"
+			],
+			[
+				"advanced",
+				"pages/astro-empires/advanced-base-guide.md"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"auto",
+				"_posts/2015-12-31-automating-scrivener-github-commit.markdown"
+			],
+			[
+				"autom",
+				"_posts/2016-01-26-automating-scrivener-wordcount-log.markdown"
+			],
+			[
+				"automating",
+				"_posts/2016-01-26-automating-scrivener-wordcount-log.markdown"
+			],
+			[
+				"octopress",
+				"_posts/2015-10-12-octopress-to-jekyll.markdown"
+			],
+			[
+				"novel",
+				"pages/novels.md"
+			],
+			[
+				"willard",
+				"pages/willard/disciplines.md"
+			],
+			[
+				"progres",
+				"logs/2016-progress.md"
+			],
+			[
+				"2016",
+				"pages/2016-progress.md"
+			],
+			[
+				"2015-prog",
+				"logs/2015-progress/index.markdown"
+			],
+			[
+				"page.",
+				"_layouts/page.html"
+			],
+			[
+				"do-mo",
+				"pages/do-more-better.md"
+			],
+			[
+				"typogra",
+				"_sass/2015/_typography.scss"
+			],
+			[
+				"fonts",
+				"_sass/2015/_fonts.scss"
+			],
+			[
+				"build",
+				"_posts/2015-10-27-build-passing-more-perfect.markdown"
+			],
+			[
+				"heros",
+				"_posts/2011-09-17-heroes-for-more-than-one-season.markdown"
+			],
+			[
+				"spo",
+				"_posts/2015-02-28-spock.markdown"
+			],
+			[
+				"breakin",
+				"_posts/2015-04-18-breaking-the-silence.markdown"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 334.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

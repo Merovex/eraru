@@ -8,9 +8,10 @@ class ApplicationController < ActionController::Base
   helper_method :correct_user?
 
   private
-    def get_book
-      id = params[:book_id] or params[:id]
-      @book = Book.find(id)
+    def set_book
+      id = params[:book_id] || params[:id]
+      # raise [params,id].inspect
+      @book = Book.friendly.find(id)
     end
     def current_user
       begin

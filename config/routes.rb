@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  resources :versions
 
   resources :books do
+    resources :versions
     resources :fixes
+    # resources :problems
   end
+  # resources :contributers
 
   resources :users
   root to: 'visitors#index'
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   get '/signin' => 'sessions#new', :as => :signin
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
+
+   get '/submit' => 'fixes#submit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
