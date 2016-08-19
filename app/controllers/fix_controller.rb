@@ -21,6 +21,9 @@ class FixController < ApplicationController
 	    labels = [params[:kind].downcase, 'reader']
 	    name = (params[:name] != '') ? params[:name] : 'Anonymous'
 	    reported_by = "Reported by: #{name} (#{params[:email]})".gsub('()',"")
+
+raise params.inspect
+
 	    text =<<-EOT
 ## Contributor
 * #{reported_by}
