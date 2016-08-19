@@ -1,4 +1,5 @@
 class FixesController < ApplicationController
+  protect_from_forgery except: :create
   before_action :set_book
   before_action :set_fix, only: [:show, :edit, :update, :destroy]
 
@@ -21,16 +22,13 @@ class FixesController < ApplicationController
   # GET /fixes/1/edit
   def edit
   end
-
-  # POST /fixes
-  # POST /fixes.json
   def create
     @fix = @book.fixes.new(fix_params)
     # raise @fix.inspect
 
     respond_to do |format|
       if @fix.save
-        format.html { redirect_to @book, notice: 'Fix was successfully created.' }
+        format.html { redirect_to book_fixes_path @book, notice: 'Fix was successfully created.' }
         format.json { render :show, status: :created, location: @fix }
       else
         format.html { render :new }
@@ -52,9 +50,6 @@ class FixesController < ApplicationController
       end
     end
   end
-
-  # DELETE /fixes/1
-  # DELETE /fixes/1.json
   def destroy
     @fix.destroy
     respond_to do |format|

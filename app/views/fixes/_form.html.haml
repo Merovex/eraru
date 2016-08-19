@@ -1,6 +1,5 @@
 .row
-  %form.col.s12
-  = form_for @fix, :url => book_fixes_path(@book), :html => {:class => "col s12"} do |f|
+  = form_for @fix, :url => book_fixes_path(@book), :authenticity_token => false, :html => {:class => "col s12"} do |f|
     .row
       .input-field.col.m6.s12
         = f.text_field :name #icon_prefix.validate{:type => "text"}
