@@ -22,7 +22,10 @@ class FixController < ApplicationController
 	    name = (params[:name] != '') ? params[:name] : 'Anonymous'
 	    reported_by = "Reported by: #{name} (#{params[:email]})".gsub('()',"")
 
-raise params.inspect
+recaptcha_response = params["g-recaptcha-response"]
+
+raise [recaptcha_response, params].inspect
+
 
 	    text =<<-EOT
 ## Contributor
