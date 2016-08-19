@@ -1,4 +1,8 @@
 module FixesHelper
+	def fix_title(fix)
+		# return fix.title unless fix.title.nil?
+		return "Fnord"
+	end
 	def fix_name(fix)
 		s = ""
 		return "Anonymous said" if fix.name.nil?

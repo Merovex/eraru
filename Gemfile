@@ -79,4 +79,5 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem "github_api"
+gem "octokit"
+gem "awesome_print"

@@ -9,6 +9,11 @@ class FixesController < ApplicationController
     @fixes = @book.fixes
   end
 
+  def create_github
+    
+  end
+
+
   # GET /fixes/1
   # GET /fixes/1.json
   def show

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :contributors
   resources :books do
     resources :versions
     resources :fixes
@@ -14,7 +15,7 @@ Rails.application.routes.draw do
   get '/signout' => 'sessions#destroy', :as => :signout
   get '/auth/failure' => 'sessions#failure'
 
-   get '/submit' => 'fixes#submit'
+   get 'books/:book_id/submit' => 'fixes#create_github'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

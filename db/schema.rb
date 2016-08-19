@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160711101555) do
+ActiveRecord::Schema.define(version: 20160819132325) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "books", force: true do |t|
+  create_table "books", force: :cascade do |t|
     t.string   "title"
     t.string   "slug"
     t.string   "version"
@@ -27,23 +27,37 @@ ActiveRecord::Schema.define(version: 20160711101555) do
 
   add_index "books", ["slug"], name: "index_books_on_slug", using: :btree
 
-  create_table "fixes", force: true do |t|
+  create_table "contributors", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "slug"
+    t.text     "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fixes", force: :cascade do |t|
     t.integer  "version_id"
     t.integer  "book_id"
-    t.integer  "location"
+    t.integer  "milestone_id"
+    t.integer  "contributor_id"
+    t.float    "location"
+    t.string   "title"
     t.string   "kind"
     t.string   "email"
     t.string   "name"
-    t.integer  "fixed"
+    t.datetime "closed_at"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "fixes", ["book_id"], name: "index_fixes_on_book_id", using: :btree
+  add_index "fixes", ["contributor_id"], name: "index_fixes_on_contributor_id", using: :btree
+  add_index "fixes", ["milestone_id"], name: "index_fixes_on_milestone_id", using: :btree
   add_index "fixes", ["version_id"], name: "index_fixes_on_version_id", using: :btree
 
-  create_table "friendly_id_slugs", force: true do |t|
+  create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
     t.string   "sluggable_type", limit: 50
@@ -56,7 +70,7 @@ ActiveRecord::Schema.define(version: 20160711101555) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "provider"
     t.string   "uid"
@@ -64,7 +78,7 @@ ActiveRecord::Schema.define(version: 20160711101555) do
     t.datetime "updated_at"
   end
 
-  create_table "versions", force: true do |t|
+  create_table "versions", force: :cascade do |t|
     t.integer  "book_id"
     t.string   "name"
     t.date     "released_on"

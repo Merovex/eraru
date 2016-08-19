@@ -1,5 +1,10 @@
 .row
-  .col.s12
-    %h4= "#{fix.book.title} #{fix.kind} @#{fix.location} "
-    %p= "#{fix_name(fix)}  <abbr title='#{fix.created_at}'>#{time_ago_in_words fix.created_at} ago</abbr>:".html_safe
-    %p= fix.text
+  .col.s12=link_to fix_title(fix), book_fix_path(fix.book, fix)
+  .col.s12.text-small.grey-text
+    %small.opened-by
+      ="\##{fix.id}"
+      opened
+      %abbr{:title => "#{fix.created_at}"}= time_ago_in_words fix.created_at
+      ago by
+      = link_to fix.contributor.name, fix.contributor
+    %span.issue-meta-section.css-truncate.issue-milestone
