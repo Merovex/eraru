@@ -5,8 +5,6 @@ class FixController < ApplicationController
 	    require 'awesome_print'
 		# TYPO , SYNTAX , IDEA, IMPLAUSIBLE, CONFUSION , DULL
 
-	    s = '086b5335257ab04169f801e9a189e14c0f857f62'
-
 	    repo_name = 'postal-marine-series.verki'
 	    repo_name = 'Konspiro'
 	    user_name = 'Merovex'
@@ -37,12 +35,12 @@ class FixController < ApplicationController
 #{params[:text].gsub(/^#/, '###')}
 EOT
 
-	    github = Octokit::Client.new(:access_token => s)
-	    repo = "#{user_name}/#{repo_name}"
+	    github = Octokit::Client.new(:access_token => ENV['github_secret'])
+	    repo = "#{user_name}/#{params[:repo]}"
 	    ap github.list_issues repo
 
 	    res = github.create_issue(repo, issue[:title], text, {labels: labels})
 	    redirect_to "http://dausha.net/korektu/thanks?b=#{params[:book]}"
-	    ap res
+	    # ap res
 	end
 end
