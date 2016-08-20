@@ -57,6 +57,6 @@ EOT
 			status = `curl "#{recaptcha_url}?secret=#{secret_key}&response=#{response}"`
 			hash = JSON.parse(status)
 			pass = hash["success"] == true ? true : false
-			raise "Recaptcha! #{pass}"
+			raise "Recaptcha! #{pass} #{status.inspect}"
 		end
 end
