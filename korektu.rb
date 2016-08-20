@@ -5,15 +5,10 @@ class Korektu < Sinatra::Base
   set :public_folder => "public", :static => true
 
   get "/" do
-    # redirect ENV['noget_url']
-
+    redirect ENV['noget_url']
   end
   post "/" do
-    origin = request.env['HTTP_ORIGIN']
-  	
-    puts [origin, ENV['origin_url'], [ENV['origin_url']].include?(origin)].inspect
-
-    if (ishuman?() and [ENV['origin_url']].include?(origin))
+    if (ishuman?() and trusted_origin_url?())
         format      = (params[:pbk] == 'on') ? 'pbk' : 'mobi'
         title       = "#{params[:kind]} in #{params[:book]} at #{format[0]}.#{params[:location]}"
         name        = (params[:name] != '') ? params[:name] : 'Anonymous'
@@ -36,6 +31,9 @@ EOT
     end
     redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
 	end
+  def trusted_origin_url?()
+    return [ENV['origin_url']].include?(request.env['HTTP_ORIGIN'])
+  end
 	def ishuman?
       secret_key = ENV['recaptcha_secret']
       return true if secret_key.nil? # You didn't set up Recaptcha, you get what you get.
