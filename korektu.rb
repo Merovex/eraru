@@ -14,19 +14,19 @@ class Korektu < Sinatra::Base
         title       = "#{params[:kind]} in #{params[:book]} at #{format[0]}.#{params[:location]}"
         name        = (params[:name] != '') ? params[:name] : 'Anonymous'
         email       = "(#{params[:email]})".gsub('()',"")
-        text        =<<~EOT
-					## Contributor
-					* Reported by: #{name} #{email}
+        text        =<<-EOT
+## Contributor
+* Reported by: #{name} #{email}
 
-					## Metadata
-					* Book: #{params[:book]}
-					* Edition: #{params[:edition]}
-					* #{format}. #{params[:location]}
+## Metadata
+* Book: #{params[:book]}
+* Edition: #{params[:edition]}
+* #{format}. #{params[:location]}
 
-					## Description
+## Description
 
-					#{params[:text].gsub(/^#/, '###')}
-				EOT
+#{params[:text].gsub(/^#/, '###')}
+EOT
         github = Octokit::Client.new(:access_token => ENV['github_secret'])
         res    = github.create_issue(params[:repo], title, text, {labels: [params[:kind].downcase, 'reader']})
     end
@@ -34,8 +34,6 @@ class Korektu < Sinatra::Base
 	end
 	def ishuman?
       secret_key = ENV['recaptcha_secret']
-      puts env.inspect
-      puts secret_key.inspect
       return true if secret_key.nil? # You didn't set up Recaptcha, you get what you get.
 
       recaptcha_url = "https://www.google.com/recaptcha/api/siteverify"
