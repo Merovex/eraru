@@ -11,7 +11,7 @@ class Korektu < Sinatra::Base
   post "/" do
     origin = request.env['HTTP_ORIGIN']
   	
-    puts [origin, [ENV['origin_url']].include?(origin)].inspect
+    puts [origin, ENV['origin_url'], [ENV['origin_url']].include?(origin)].inspect
 
     if (ishuman?() and [ENV['origin_url']].include?(origin))
         format      = (params[:pbk] == 'on') ? 'pbk' : 'mobi'
