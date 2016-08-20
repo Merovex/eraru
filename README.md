@@ -1,24 +1,27 @@
-## Korektu
+# Korektu
 
 **Korektu** is a [Sinatra-based application](www.sinatrarb.com) that only does one thing well: it takes form input and generates a GitHub issue to a private repository. The form is hosted via a separate site, leaving Sinatra with very little to do.
 
 I created this to address the problem of having untrusted users submitting issues for private GitHub repositories when I wanted to have issues reported against that repository.
 
-An OAuth token allows that untrusted user to report as if they were a trusted user. However, this token makes the private repo vulnerable. Korektu helps conceal that token from the untrusted user.
+An OAuth token allows that untrusted user to report as if they were a trusted user. However, this token makes the private repo vulnerable.
+
+Korektu helps conceal that token from the untrusted user by calling it within an application.
 
 ## Installation
 
 1. Create a Heroku app
 2. Push the Korektu Sinatra app to Heroku
-3. Set the Heroku environment variables:
+3. Set the Heroku environment variables (all but recaptcha_secret are mandatory):
     * github_secret - via [GitHub's Developer pages](https://developer.github.com/v3/oauth/)
-    * recaptcha_secret - via [Google's Recaptcha](https://www.google.com/recaptcha/intro/index.html); if you don't set this, we don't check for humanity.
     * thanks_url - The redirect URL after form processing
     * noget_url - The redirect URL when somebody tries to GET Sinatra.
     * origin_url - The source URL for the form
+    * recaptcha_secret - via [Google's Recaptcha](https://www.google.com/recaptcha/intro/index.html); if you don't set this, we don't check for humanity.
 4. Create the desired form ([like mine](http://www.dausha.net/korektu/bellicose))
     * The form needs to set the repository (user_name/repo_name) 
     * I rely on HTML5 "required" to inform the browser to parse fields. If you want name/email to be mandatory, add them there.
+    * Point the form action to the Heroku application.
 
 As I created this for my [novel writing](http://www.dausha.net), the data collected is rather specific to me. Depending on your use case, you may consider removing or changing the following variables or entries:
 
