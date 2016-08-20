@@ -5,11 +5,13 @@ class Korektu < Sinatra::Base
   set :public_folder => "public", :static => true
 
   get "/" do
-    redirect ENV['noget_url']
+    # redirect ENV['noget_url']
+
   end
   post "/" do
+    origin = request.env['HTTP_ORIGIN']
   	
-    if ishuman?()
+    if ishuman?() and [ENV['origin_url']].include?(origin)
         format      = (params[:pbk] == 'on') ? 'pbk' : 'mobi'
         title       = "#{params[:kind]} in #{params[:book]} at #{format[0]}.#{params[:location]}"
         name        = (params[:name] != '') ? params[:name] : 'Anonymous'
