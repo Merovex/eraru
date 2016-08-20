@@ -1,30 +1,21 @@
 ## Korektu
 
-**Korektu** is a [Sinatra-based application](www.sinatrarb.com) that only does one thing well: it takes form input and generates a GitHub issue to a private repository. The form itself can be almost anywhere
+**Korektu** is a [Sinatra-based application](www.sinatrarb.com) that only does one thing well: it takes form input and generates a GitHub issue to a private repository. The form is hosted via a separate site, leaving Sinatra with very little to do.
 
-## Code Example
+I created this to address the problem of having untrusted users submitting issues for private GitHub repositories when I wanted to have issues reported against that repository.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+An OAuth allows that untrusted user to report as if they were a trusted user. However, OAuth makes the private repo vulnerable. Korektu helps conceal that OAuth from the untrusted user.
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+1. Create a Heroku app
+2. Push the Korektu Sinatra app to Heroku
+3. Set the Heroku environment variables:
+    4. github_secret
+    5. recaptcha_secret
+    5. thanks_url
+    6. noget_url
+    7. origin_url
 
 ## License
 
