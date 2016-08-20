@@ -54,7 +54,7 @@ EOT
 			secret_key = ENV['recaptcha_secret']
 			response = params["g-recaptcha-response"]
 
-			status = `curl "#{recaptcha_url}?secret=#{secret_key}&response=#{response}"`
+			status = `curl --request POST "#{recaptcha_url}?secret=#{secret_key}&response=#{response}"`
 			hash = JSON.parse(status)
 			pass = hash["success"] == true ? true : false
 			raise "Recaptcha! #{pass} #{status.inspect}"
