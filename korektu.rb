@@ -1,6 +1,6 @@
 class Korektu < Sinatra::Base
-	require 'octokit'
-	require "json"
+  require 'octokit'
+  require "json"
 
   set :public_folder => "public", :static => true
 
@@ -9,11 +9,11 @@ class Korektu < Sinatra::Base
   end
   post "/" do
     if (ishuman?() and trusted_origin_url?())
-        format      = (params[:pbk] == 'on') ? 'pbk' : 'mobi'
-        title       = "#{params[:kind]} in #{params[:book]} at #{format[0]}.#{params[:location]}"
-        name        = (params[:name] != '') ? params[:name] : 'Anonymous'
-        email       = "(#{params[:email]})".gsub('()',"")
-        text        =<<-EOT
+        format = (params[:pbk] == 'on') ? 'pbk' : 'mobi'
+        title  = "#{params[:label]} in #{params[:book]} at #{format[0]}.#{params[:location]}"
+        name   = (params[:name] != '')  ? params[:name] : 'Anonymous'
+        email  = "(#{params[:email]})".gsub('()','')
+        text   =<<-EOT
 ## Contributor
 * Reported by: #{name} #{email}
 
@@ -27,22 +27,21 @@ class Korektu < Sinatra::Base
 #{params[:text].gsub(/^#/, '###')}
 EOT
         github = Octokit::Client.new(:access_token => ENV['github_secret'])
-        res    = github.create_issue(params[:repo], title, text, {labels: [params[:kind].downcase, 'reader']})
+        res    = github.create_issue(params[:repo], title, text, {labels: [params[:label].downcase, 'reader']})
     end
     redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
-	end
-  def trusted_origin_url?()
-    return [ENV['origin_url']].include?(request.env['HTTP_ORIGIN'])
   end
-	def ishuman?
-      secret_key = ENV['recaptcha_secret']
+  def trusted_origin_url?()
+    return ENV['origin_url'].include?(request.env['HTTP_ORIGIN'])
+  end
+  def ishuman?
+      secret_key    = ENV['recaptcha_secret']
       return true if secret_key.nil? # You didn't set up Recaptcha, you get what you get.
 
       recaptcha_url = "https://www.google.com/recaptcha/api/siteverify"
-      data = "-d \"secret=#{secret_key}&response=#{params["g-recaptcha-response"]}\""
-
-      status   = `curl --request POST #{data} #{recaptcha_url}`
-      hash     = JSON.parse(status)
+      data          = "-d \"secret=#{secret_key}&response=#{params["g-recaptcha-response"]}\""
+      status        = `curl --request POST #{data} #{recaptcha_url}`
+      hash          = JSON.parse(status)
       hash["success"] == true ? true : false
   end
 end
