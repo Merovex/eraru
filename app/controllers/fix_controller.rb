@@ -22,9 +22,7 @@ class FixController < ApplicationController
 	    name = (params[:name] != '') ? params[:name] : 'Anonymous'
 	    reported_by = "Reported by: #{name} (#{params[:email]})".gsub('()',"")
 
-check_recaptcha()
-
-
+		human = check_recaptcha()
 
 	    text =<<-EOT
 ## Contributor
@@ -40,11 +38,11 @@ check_recaptcha()
 #{params[:text].gsub(/^#/, '###')}
 EOT
 
-	    github = Octokit::Client.new(:access_token => ENV['github_secret'])
-	    repo = "#{user_name}/#{params[:repo]}"
-	    ap github.list_issues repo
-
-	    res = github.create_issue(repo, issue[:title], text, {labels: labels})
+		if human
+		    github = Octokit::Client.new(:access_token => ENV['github_secret'])
+		    repo = "#{user_name}/#{params[:repo]}"
+		    res = github.create_issue(repo, issue[:title], text, {labels: labels})
+		end
 	    redirect_to "http://dausha.net/korektu/thanks?b=#{params[:book]}"
 	    # ap res
 	end
@@ -58,7 +56,7 @@ EOT
 
 			status = `curl --request POST #{data} #{recaptcha_url}`
 			hash = JSON.parse(status)
-			pass = hash["success"] == true ? true : false
-			raise "Recaptcha! #{pass} #{status.inspect}"
+			hash["success"] == true ? true : false
+			# raise "Recaptcha! #{pass} #{status.inspect}"
 		end
 end
