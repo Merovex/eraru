@@ -22,9 +22,8 @@ class FixController < ApplicationController
 	    name = (params[:name] != '') ? params[:name] : 'Anonymous'
 	    reported_by = "Reported by: #{name} (#{params[:email]})".gsub('()',"")
 
-recaptcha_response = params["g-recaptcha-response"]
+check_recaptcha()
 
-raise [recaptcha_response, params].inspect
 
 
 	    text =<<-EOT
@@ -49,4 +48,15 @@ EOT
 	    redirect_to "http://dausha.net/korektu/thanks?b=#{params[:book]}"
 	    # ap res
 	end
+	private
+		def check_recaptcha
+			recaptcha_url = "https://www.google.com/recaptcha/api/siteverify"
+			secret_key = ENV['recaptcha_secret']
+			response = params["g-recaptcha-response"]
+
+			status = `curl "#{recaptcha_url}?secret=#{secret_key}&response=#{response}"`
+			hash = JSON.parse(status)
+			pass = hash["success"] == true ? true : false
+			raise "Recaptcha! #{pass}"
+		end
 end
