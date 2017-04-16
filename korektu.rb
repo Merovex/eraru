@@ -36,7 +36,7 @@ EOT
   end
   def trusted_origin_url?()
     http_origin = request.env['HTTP_ORIGIN'].sub("http://").sub("https://").sub(":4000")
-    good = ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
+    good = ENV['origin_url'].split(';').include?(http_origin)
     puts "Trusted? #{good} (#{ENV['origin_url'].split(';').inspect}) (#{request.env['HTTP_ORIGIN']})"
     return good
   end
