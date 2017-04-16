@@ -33,7 +33,7 @@ EOT
   end
   def trusted_origin_url?()
     good = ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
-    puts good
+    puts "Trusted? #{good}"
     return good
   end
   def ishuman?
