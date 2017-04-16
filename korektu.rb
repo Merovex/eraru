@@ -28,8 +28,11 @@ class Korektu < Sinatra::Base
 EOT
         github = Octokit::Client.new(:access_token => ENV['github_secret'])
         res    = github.create_issue(params[:repo], title, text, {labels: [params[:label].downcase, 'reader']})
+        redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
+    else
+      puts "Deviant!"
+      redirect "#{ENV['thanks_url']}?b=#{params[:book]}&d=true"
     end
-    redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
   end
   def trusted_origin_url?()
     good = ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
