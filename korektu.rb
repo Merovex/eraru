@@ -32,11 +32,12 @@ EOT
     redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
   end
   def trusted_origin_url?()
-    return ENV['origin_url'].include?(request.env['HTTP_ORIGIN'])
+    return ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
   end
   def ishuman?
       secret_key    = ENV['recaptcha_secret']
       return true if secret_key.nil? # You didn't set up Recaptcha, you get what you get.
+      return true
 
       recaptcha_url = "https://www.google.com/recaptcha/api/siteverify"
       data          = "-d \"secret=#{secret_key}&response=#{params["g-recaptcha-response"]}\""
