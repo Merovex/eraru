@@ -32,7 +32,9 @@ EOT
     redirect "#{ENV['thanks_url']}?b=#{params[:book]}"
   end
   def trusted_origin_url?()
-    return ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
+    good = ENV['origin_url'].split(';').include?(request.env['HTTP_ORIGIN'])
+    puts good
+    return good
   end
   def ishuman?
       secret_key    = ENV['recaptcha_secret']
