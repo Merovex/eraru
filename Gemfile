@@ -5,6 +5,7 @@ source "https://rubygems.org/"
 
 gem "sinatra", "~> 1.4"
 gem "octokit"
+gem "rack", ">= 2.1.4"
 
 group :development do
   gem "rake", "~> 12.3"
